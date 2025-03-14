@@ -64,6 +64,7 @@ public class CourseDAOTest {
     @DisplayName("Test student count by class")
     public void testStudentCounts() {
         List<StudentClassCount> studentCounts = dao.studentsPerClass();
+
         int i = 0;
         for (StudentClassCount sc : studentCounts) {
             if (sc.getCourseCode().contains("CS305")) {
